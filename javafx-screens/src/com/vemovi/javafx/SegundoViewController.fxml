@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:controller="com.vemovi.javafx.SegundoViewController" maxWidth="-Infinity" maxHeight="-Infinity" minWidth="-Infinity" minHeight="-Infinity" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" xmlns:fx="http://javafx.com/fxml/1">
+
+	<children>
+
+		<AnchorPane fx:id="navigationBar" styleClass="navigation-bar" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+			<BorderPane fx:id="toolBar" prefHeight="48.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+				<left>
+					<Button fx:id="buttonBack" styleClass="navigation-button" text="Back" onAction="#onDismissViewController" BorderPane.alignment="CENTER"/>
+				</left>
+				<center>			
+					<Label fx:id="navigationTitle" styleClass="navigation-title" text="SegundoViewController" BorderPane.alignment="CENTER" />		
+				</center>
+				<right>		
+					<Button fx:id="buttonNext" styleClass="navigation-button" text="Next" onAction="#onNextViewController" BorderPane.alignment="CENTER"/>
+				</right>
+			</BorderPane>
+			<TableView AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="48.0" AnchorPane.bottomAnchor="0.0"/>
+		</AnchorPane>
+		
+	</children>
+	
+	<stylesheets>
+        <URL value="@SegundoViewController.css" />
+	</stylesheets>
+   
+</AnchorPane>

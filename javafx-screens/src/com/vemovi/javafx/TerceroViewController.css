@@ -1,0 +1,19 @@
+
+#navigationBar {
+    -fx-background-color: #009688
+}
+
+.navigation-title {
+	-fx-text-fill: white;
+	-fx-font-size: 16pt;
+	-fx-font-weight: bold;
+}
+
+.navigation-button {
+	-fx-font-size: 14pt;	
+	-fx-background-color: transparent;
+ 	-fx-text-fill: #ffffff;
+	-fx-border-radius: 0;
+ 	-fx-background-radius: 0;
+	-fx-padding: 0pt 20pt 0pt 20pt;
+}
