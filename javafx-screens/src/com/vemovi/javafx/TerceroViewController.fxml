@@ -23,7 +23,6 @@
 					<Label fx:id="navigationTitle" styleClass="navigation-title" text="TerceroViewController" BorderPane.alignment="CENTER" />		
 				</center>
 				<right>		
-					<Button fx:id="buttonNext" styleClass="navigation-button" text="Next" onAction="#onNextViewController" BorderPane.alignment="CENTER"/>
 				</right>
 			</BorderPane>
 			<TableView AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="48.0" AnchorPane.bottomAnchor="0.0"/>

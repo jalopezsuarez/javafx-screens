@@ -14,9 +14,6 @@ public class TerceroViewController extends ViewController implements Initializab
 	Label labelServer;
 
 	@FXML
-	Button buttonNext;
-
-	@FXML
 	Button buttonBack;
 
 	@Override
@@ -48,12 +45,8 @@ public class TerceroViewController extends ViewController implements Initializab
 		System.out.println(this.getClass().getName() + ": viewWillDisappear");
 	}
 
-	public void onNextViewController() {
-		this.navigationController.pushViewController("com/vemovi/javafx/PrimeroViewController.fxml");
-	}
-
 	public void onDismissViewController() {
-		this.navigationController.dismissViewController();
+		navigationController.dismissViewController();
 	}
 
 }

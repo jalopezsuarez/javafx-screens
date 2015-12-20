@@ -32,12 +32,12 @@ public abstract class ViewController {
 		this.navigationController = navigationController;
 	}
 
-	public abstract void viewDidAppear();
-
-	public abstract void viewDidDisappear();
-
 	public abstract void viewWillAppear();
 
 	public abstract void viewWillDisappear();
+
+	public abstract void viewDidAppear();
+
+	public abstract void viewDidDisappear();
 
 }

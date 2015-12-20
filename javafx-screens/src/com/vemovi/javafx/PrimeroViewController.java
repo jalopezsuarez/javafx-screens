@@ -12,12 +12,12 @@ public class PrimeroViewController extends ViewController implements Initializab
 
 	@FXML
 	Label labelServer;
+	
+	@FXML
+	Button buttonBack;
 
 	@FXML
 	Button buttonNext;
-
-	@FXML
-	Button buttonBack;
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
@@ -49,11 +49,12 @@ public class PrimeroViewController extends ViewController implements Initializab
 	}
 
 	public void onNextViewController() {
-		this.navigationController.pushViewController("com/vemovi/javafx/SegundoViewController.fxml");
+		SegundoViewController viewController = (SegundoViewController) navigationController.initViewController("com/vemovi/javafx/SegundoViewController.fxml");
+		navigationController.pushViewController(viewController);
 	}
-
+	
 	public void onDismissViewController() {
-		this.navigationController.dismissViewController();
+		navigationController.dismissViewController();
 	}
 
 }

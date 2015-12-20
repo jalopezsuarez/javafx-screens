@@ -20,7 +20,8 @@ public class ApplicationDelegate extends Application {
 		Platform.setImplicitExit(false);
 
 		NavigationController navigation = new NavigationController();
-		navigation.pushViewController("com/vemovi/javafx/PrimeroViewController.fxml");
+		PrimeroViewController viewController = (PrimeroViewController) navigation.initViewController("com/vemovi/javafx/PrimeroViewController.fxml");
+		navigation.pushViewController(viewController);
 
 		StackPane root = new StackPane();
 		root.getChildren().add(navigation);

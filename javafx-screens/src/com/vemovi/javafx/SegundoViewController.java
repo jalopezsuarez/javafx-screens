@@ -9,15 +9,15 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class SegundoViewController extends ViewController implements Initializable {
-	
+
 	@FXML
 	Label labelServer;
 
 	@FXML
-	Button buttonNext;
-
-	@FXML
 	Button buttonBack;
+	
+	@FXML
+	Button buttonNext;
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
@@ -49,12 +49,12 @@ public class SegundoViewController extends ViewController implements Initializab
 	}
 
 	public void onNextViewController() {
-		this.navigationController.pushViewController("com/vemovi/javafx/TerceroViewController.fxml");
+		TerceroViewController viewController = (TerceroViewController) navigationController.initViewController("com/vemovi/javafx/TerceroViewController.fxml");
+		navigationController.pushViewController(viewController);
 	}
 
 	public void onDismissViewController() {
-		this.navigationController.dismissViewController();
-		;
+		navigationController.dismissViewController();
 	}
 
 }
